@@ -1,0 +1,229 @@
+/* Header Cynthia */
+#header-cynthia {
+    background-image: url("./images/header.png");
+	background-repeat:  no-repeat;
+	padding: 5px;
+    color: #FFFFFF;
+	height: 150px;
+	margin-bottom: 10px;
+}
+
+/* Menu user Cynthia */
+.menu-user-cynthia {
+    background: #1163d3;
+	padding: 4px;
+	height: auto;
+	margin-bottom: 15px;
+    font-size: 13px;
+    list-style-type: none;	
+}
+
+.menu-user-cynthia a { color: #FFFFFF;}
+
+/* Header border */
+.header-border {
+   background: #212121;
+   text-transform: uppercase;   
+   min-height: 30px;
+   padding: 10px 0 0 10px;
+   text-align: left;
+   overflow: hidden;
+   border-bottom: #000 solid 1px;
+   *height: 30px;
+}
+
+/* Breacrumb Cynthia */
+#breadcrumb-cynthia {
+    background: #212121;
+	border: 1px solid #080808;
+    border-style: inset;
+    color: #FFFFFF;
+    padding: 5px;
+	margin-bottom: 15px;
+}
+
+#breadcrumb-cynthia-footer{
+    background: #212121;
+    color: #FFFFFF;
+    padding: 5px;
+	top: 0;
+}
+
+#breadcrumb-cynthia, #breadcrumb-cynthia-footer a {
+	text-decoration: none;	
+}
+
+#breadcrumb-cynthia li.breadcrumbs:before, #breadcrumb-cynthia-footer li.breadcrumbs:before  {
+	content: '\f015';
+	display: block;
+	position: absolute;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	text-decoration: none;
+	padding: 0 8px 0 0;	
+	left: 0;
+	top: 0;
+	color: #888;
+}
+
+#breadcrumb-cynthia .crumb a, #breadcrumb-cynthia-footer .crumb a   {
+	position: relative;
+}
+
+#breadcrumb-cynthia .crumb a:before, #breadcrumb-cynthia-footer .crumb a:before {
+	content: '';
+	width: 100%;
+	height: 1px;
+	position: absolute;
+	bottom: 7px;
+}
+
+/* Forum index */
+.row1 {
+	background-color: #212121;
+}
+
+.row2 {
+	background-color: #232323;
+}
+
+.row1, .row2 {
+	border-bottom: none !important; 
+}
+
+li.header dl.icon dt {
+	font-size: 16px;
+	font-weight: bold;
+	color: #ffffff;
+	text-transform: none;
+}
+
+li.header dl.icon dt a {
+	color: #ffffff;
+}
+
+li.header dl.icon dt .list-inner {
+	/* Tweak for headers alignment when folder icon used */
+	padding-left: 5px;
+}
+
+dd.topics, dd.posts, dd.views {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+li.header dd.topics, li.header dd.posts, li.header dd.lastpost, li.header dd.views {
+	font-size: 14px;
+	font-weight: bold;
+	color: #ffffff;
+	text-transform: none;
+}
+
+li.header dd.lastpost { width: auto; }
+
+ul.topiclist li {
+	font-size: 12px;
+	color: #a5a4a4;
+}
+
+/* Float search direction */
+.float-direction-ltr { 
+	float:right;
+}
+
+/*  Menu Cynthia */
+#header-menu, .nav-menu{
+    display: block;
+}
+
+/* We define a 100% width and a fixed height for our menu */
+#header-menu {
+    background: #323232;
+    height:50px;
+    position: relative;
+    width: 100%;
+    z-index: 2
+}
+
+/* The logo will be floated to the left */
+#logo-top{
+    background: url("./images/site_logo.png") no-repeat 0 0;
+    display: block;
+    float: left;
+    margin: 10px 10px 0;
+    min-width: 100px;
+    height: 35px;
+    text-indent: -9999px
+}
+
+/* Our nav with id #menu-mobile float it to the right */
+#menu-mobile{float: right;}   
+
+/* Remove styles by default of the ul tag */
+#menu-mobile ul{
+	list-style: none;
+    font-size: 14px;
+}
+        
+/* We focus and put the text in uppercase */
+#menu-mobile li{
+	display: block;
+	float: left;
+	text-transform: uppercase;
+	text-align: center;
+}
+            
+/* We give style to our links */
+#menu-mobile li a{
+	display: block;
+	color: #FFF;
+	text-decoration: none;
+	height: 50px;
+	line-height: 50px;
+	padding: 0 26px;
+}
+
+#menu-mobile li a:hover{
+	background: #1163d3;
+	color: #FFF;
+}
+
+.menu-mobile-active a  {
+	background: #2e2e2e;
+	color: #FFF;
+}				
+    
+/* #nav-mobile styles and hide it */
+#nav-mobile{
+	display: none;
+	background: url("./images/nav.png") no-repeat center center;
+	float: right;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	right: 0;
+	top:0;
+	opacity: .6;
+} 
+  
+/* We'll add this class to #nav-mobile, when the mobile menu has been deployed */
+#nav-mobile.nav-active{
+	opacity: 1;
+}
+
+#menu-mobile  ul li:hover > ul.submenu{
+	display: inherit;
+}
+
+.submenu {
+	background-color: #323232;
+	width: 145px;
+	position: absolute;
+	display: none;
+}
+.submenu li {
+	clear: both;
+	width: 100%;
+}
