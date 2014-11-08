@@ -317,7 +317,6 @@ Colours and backgrounds for content.css
 
 ul.forums {
 	background-color: #3b3b3b;
-	background-image: url("./images/gradient.gif");
 }
 
 ul.topiclist li {
@@ -395,12 +394,9 @@ dl.faq dt {
 /* Quote block */
 blockquote {
 	background-color: #4c4c4c;
-	background-image: url("./images/quote.gif");
 	border-color:#262626;
-}
-
-.rtl blockquote {
-	background-image: url("./images/quote_rtl.gif");
+	padding: 6px 10px 10px 10px;
+	position: relative;	
 }
 
 blockquote blockquote {
@@ -411,6 +407,21 @@ blockquote blockquote {
 blockquote blockquote blockquote {
 	/* Nested quotes */
 	background-color: #4c4c4c;
+}
+
+blockquote:before, blockquote:after {
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.2em;
+	position: absolute;
+	opacity: 0.3;
+}
+
+blockquote:before {
+	content: "\f10d";
+	left: 3px;
+	top: 2px;
 }
 
 /* Code block */

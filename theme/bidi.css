@@ -289,6 +289,11 @@ li.breadcrumbs span:first-child > a {
 	padding-right: 19px;
 }
 
+li.breadcrumbs:before {
+	left: auto;
+	right: 0;
+}
+
 .rtl a.top {
 	float: left;
 }
@@ -477,6 +482,12 @@ li.breadcrumbs span:first-child > a {
 .rtl blockquote blockquote {
 	/* Nested quotes */
 	margin: 0.5em 15px 0 1px;
+}
+
+.rtl blockquote:before {
+	content: "\f10e";
+	right: 3px;
+	bottom: 2px;
 }
 
 .rtl blockquote cite {
