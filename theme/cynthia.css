@@ -4,7 +4,7 @@
 	background-repeat:  no-repeat;
 	padding: 5px;
     color: #FFFFFF;
-	height: 150px;
+	min-height: 150px;
 	margin-bottom: 10px;
 }
 

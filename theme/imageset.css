@@ -308,55 +308,50 @@ span.imageset {
 	padding-left: 20px;
 	padding-top: 20px;
 }
-.imageset.icon_post_delete {
-	background-image: url("./images/icon_post_delete.png");
-	padding-left: 20px;
-	padding-top: 20px;
-}
-.imageset.icon_post_info {
-	background-image: url("./images/icon_post_info.png");
-	padding-left: 20px;
-	padding-top: 20px;
-}
-.imageset.icon_post_report {
-	background-image: url("./images/icon_post_report.png");
-	padding-left: 20px;
-	padding-top: 20px;
-}
 .imageset.icon_post_target {
-	background-image: url("./images/icon_post_target.png");
+	background-image: url("./images/icon_post_target.gif");
 	padding-left: 11px;
 	padding-top: 9px;
 }
 .imageset.icon_post_target_unread {
-	background-image: url("./images/icon_post_target_unread.png");
+	background-image: url("./images/icon_post_target_unread.gif");
 	padding-left: 11px;
 	padding-top: 9px;
 }
 .imageset.icon_topic_attach {
-	background-image: url("./images/icon_topic_attach.png");
+	background-image: url("./images/icon_topic_attach.gif");
 	padding-left: 7px;
 	padding-top: 10px;
 }
 .imageset.icon_topic_latest {
-	background-image: url("./images/icon_topic_latest.png");
+	background-image: url("./images/icon_topic_latest.gif");
 	padding-left: 11px;
 	padding-top: 9px;
 }
 .imageset.icon_topic_newest {
-	background-image: url("./images/icon_topic_newest.png");
+	background-image: url("./images/icon_topic_newest.gif");
 	padding-left: 11px;
 	padding-top: 9px;
 }
+.imageset.icon_topic_reported {
+	background-image: url("./images/icon_topic_reported.gif");
+	padding-left: 16px;
+	padding-top: 14px;
+}
+.imageset.icon_topic_deleted {
+	background-image: url("./images/icon_topic_deleted.png");
+	padding-left: 16px;
+	padding-top: 14px;
+}
+.imageset.icon_topic_unapproved {
+	background-image: url("./images/icon_topic_unapproved.gif");
+	padding-left: 16px;
+	padding-top: 14px;
+}
 .imageset.icon_topic_poll {
-	background-image: url("./images/icon_topic_poll.png");
+	background-image: url("./images/icon_topic_poll.gif");
 	padding-left: 11px;
 	padding-top: 10px;
-}
-.imageset.icon_user_warn {
-	background-image: url("./images/icon_user_warn.png");
-	padding-left: 20px;
-	padding-top: 20px;
 }
 
 .imageset.icon_contact,
