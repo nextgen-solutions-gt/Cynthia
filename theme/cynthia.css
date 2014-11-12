@@ -104,10 +104,6 @@ li.header dl.icon dt a {
 	color: #ffffff;
 }
 
-li.header dl.icon dt .list-inner {
-	/* Tweak for headers alignment when folder icon used */
-	padding-left: 5px;
-}
 
 dd.topics, dd.posts, dd.views {
 	font-size: 14px;
