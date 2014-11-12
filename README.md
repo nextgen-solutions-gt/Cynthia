@@ -10,3 +10,21 @@ There are 2 separate logos to the main header.
 The design has been improved, is simpler and more professional.
 
 RTL support for people who use languages Arabic, Persian, etc.
+
+#### Customise
+
+FontAwesome icons are defined by using their unicode values, like `\f004`. You can add your own rules for your own icons, or change the existing codes. The quickest way to find the unicodes you need is to use the [FontAwesome cheatsheet] (http://fontawesome.io/cheatsheet/). You need to copy the last 4 characters of the code string after the icon you want, and prefix it with a `\`. So "home" is `\f015`.
+
+You can use this method to add icons to just about every element. A commonly used example is for the phpBB Pages extension, when you want to assign icons to your page links (in the header/footer/etc). Add the following code to your `custom.css` file:
+````
+.small-icon.icon-page-xxx > a:before { content: '\f0ac'; }
+````
+Change the `xxx` to the "route" of your custom page
+
+## Style Support
+
+If you have questions or need help you can visit my official site [Melvin Garcia] (http://www.melvingarcia.com/).
+
+### Credits
+
+The integration of the Font Awesome, is thanks to [PayBas] (https://github.com/PayBas/).
