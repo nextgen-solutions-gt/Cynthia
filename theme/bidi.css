@@ -182,8 +182,7 @@
 
 /* Misc layout styles
 ---------------------------------------- */
-/* column[1-2] styles are containers for two column layouts
-   Also see tweaks.css */
+/* column[1-2] styles are containers for two column layouts */
 .rtl .column1 {
 	float: right;
 	clear: right;
@@ -287,6 +286,13 @@
 li.breadcrumbs span:first-child > a {
 	padding-left: 0;
 	padding-right: 19px;
+}
+
+/* Notification mark read link */
+.rtl .dropdown-extended a.mark_read {
+	border-radius: 0 3px 3px 0;
+	left: 0;
+	right: auto;	
 }
 
 li.breadcrumbs:before {

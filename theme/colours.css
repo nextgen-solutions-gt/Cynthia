@@ -692,7 +692,6 @@ Colours and backgrounds for buttons.css
 .icon-register > a:before 			{ content: "\f044"; }
 .icon-restore-permissions > a:before { content: "\f079"; }
 .icon-search   > a:before 			{ content: "\f002"; }
-.icon-search-advanced > a:before 	{ content: "\f1de"; }
 .icon-search-self > a:before 		{ content: "\f007"; }
 .icon-search-unanswered > a:before 	{ content: "\f1ae"; }
 .icon-search-unread > a:before 		{ content: "\f06e"; }
@@ -1030,6 +1029,14 @@ fieldset.quick-login input.inputbox {
 
 #message-box textarea {
 	color: #FFFFFF;
+}
+
+#message-box textarea.drag-n-drop {
+	outline-color: rgba(102, 102, 102, 0.5);
+}
+
+#message-box textarea.drag-n-drop-highlight {
+	outline-color: rgba(17, 163, 234, 0.5);	
 }
 
 /* Input field styles
