@@ -191,12 +191,17 @@ dl.details dd {
 }
 
 .reported {
-	background-color: #d2d2d2;
+	background-color: #000000;
 }
 
 li.reported:hover {
-	background-color: #ece6d5 !important;
+	border-color: #de1818;
 }
+
+li.unapproved:hover {
+	border-color: #016aec;
+}
+
 .sticky, .announce {
 	/* you can add a background for stickies and announcements*/
 }
@@ -206,14 +211,17 @@ div.rules {
 	color: #ffffff;
 }
 
-p.post-notice,
-.postbody div.rules {
-    background-color: #ece6d5;
-	border: solid 1px #000;
+p.post-notice, .postbody div.rules {
+    background-color: #7c7c7c;
+	color: #000000;
 	margin-left: 10px;
 	margin-right: 8px;
 }	
-	
+
+.post-notice.reported a {
+	color: #000000;
+}
+
 p.post-notice:before {
 	background: none !important;
 	content: "";
@@ -358,7 +366,7 @@ li.header dt, li.header dd {
 /* Content container styles
 ----------------------------------------*/
 .content {
-	color: #FFFFFF;
+	color: #8f8f8f;
 }
 
 .content h2, .panel h2 {
@@ -577,7 +585,7 @@ fieldset.polls dd div {
 }
 
 .postprofile strong {
-	color: #FFFFFF;
+	color: #a0a0a0;
 }
 
 .online {

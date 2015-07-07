@@ -25,7 +25,7 @@
 	<div class="copyright">
 		<!-- EVENT overall_footer_copyright_prepend -->
 		{CREDIT_LINE}
-		<br />Cynthia style created by <a href="http://www.melvingarcia.com/">Melvin Garcia</a>
+		<br />Cynthia style created by <a href="http://www.melvingarcia.com/">Melvin García</a>
 		<!-- IF TRANSLATION_INFO --><br />{TRANSLATION_INFO}<!-- ENDIF -->
 		<!-- EVENT overall_footer_copyright_append -->
 		<!-- IF DEBUG_OUTPUT --><br />{DEBUG_OUTPUT}<!-- ENDIF -->
@@ -41,26 +41,8 @@
 <script type="text/javascript" src="{T_ASSETS_PATH}/javascript/core.js?assets_version={T_ASSETS_VERSION}"></script>
 <!-- INCLUDEJS forum_fn.js -->
 <!-- INCLUDEJS ajax.js -->
-<script type="text/javascript">
-// <![CDATA[
-    $(function() {
+<!-- INCLUDEJS nav_mobile.js -->
 
-        var btn_movil = $('#nav-mobile'),
-            menu = $('#menu-mobile').find('ul');
-
-        // Al dar click agregar/quitar clases que permiten el despliegue del menú
-        btn_movil.on('click', function (e) {
-            e.preventDefault();
-
-            var el = $(this);
-
-            el.toggleClass('nav-active');
-            menu.toggleClass('open-menu');
-        })
-
-    });
-// ]]>
-</script>
 <!-- EVENT overall_footer_after -->
 
 <!-- IF S_PLUPLOAD --><!-- INCLUDE plupload.html --><!-- ENDIF -->

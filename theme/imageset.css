@@ -365,7 +365,7 @@ span.imageset {
 }
 
 .imageset.icon_contact:before 			{ content: "\f0e5"; padding-left: 2px; padding-top: 1px; }
-.imageset.icon_topic_reported:before 	{ content: "\f06a"; color: #FFF; padding-left: 3px; }
+.imageset.icon_topic_reported:before 	{ content: "\f06a"; color: #de1818; padding-left: 3px; }
 .imageset.icon_topic_unapproved:before 	{ content: "\f059"; color: #FFF; padding-left: 2px; }
 .imageset.icon_topic_deleted:before 	{ content: "\f1b8"; color: #5CFF00; padding-left: 2px; }
 
