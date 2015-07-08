@@ -9,7 +9,7 @@ span.imageset {
 	overflow: hidden;
 }
 .imageset:before {
-	color: #f34733;
+	color: #136ce1;
 	display: block;
 	font-family: FontAwesome;
 	font-style: normal;
@@ -318,11 +318,6 @@ span.imageset {
 	padding-left: 11px;
 	padding-top: 9px;
 }
-.imageset.icon_topic_attach {
-	background-image: url("./images/icon_topic_attach.gif");
-	padding-left: 7px;
-	padding-top: 10px;
-}
 .imageset.icon_topic_latest {
 	background-image: url("./images/icon_topic_latest.gif");
 	padding-left: 11px;
@@ -333,27 +328,8 @@ span.imageset {
 	padding-left: 11px;
 	padding-top: 9px;
 }
-.imageset.icon_topic_reported {
-	background-image: url("./images/icon_topic_reported.gif");
-	padding-left: 16px;
-	padding-top: 14px;
-}
-.imageset.icon_topic_deleted {
-	background-image: url("./images/icon_topic_deleted.png");
-	padding-left: 16px;
-	padding-top: 14px;
-}
-.imageset.icon_topic_unapproved {
-	background-image: url("./images/icon_topic_unapproved.gif");
-	padding-left: 16px;
-	padding-top: 14px;
-}
-.imageset.icon_topic_poll {
-	background-image: url("./images/icon_topic_poll.gif");
-	padding-left: 11px;
-	padding-top: 10px;
-}
-
+.imageset.icon_topic_attach,
+.imageset.icon_topic_poll,
 .imageset.icon_contact,
 .imageset.icon_topic_reported,
 .imageset.icon_topic_unapproved,
@@ -366,8 +342,10 @@ span.imageset {
 
 .imageset.icon_contact:before 			{ content: "\f0e5"; padding-left: 2px; padding-top: 1px; }
 .imageset.icon_topic_reported:before 	{ content: "\f06a"; color: #de1818; padding-left: 3px; }
-.imageset.icon_topic_unapproved:before 	{ content: "\f059"; color: #FFF; padding-left: 2px; }
-.imageset.icon_topic_deleted:before 	{ content: "\f1b8"; color: #5CFF00; padding-left: 2px; }
+.imageset.icon_topic_unapproved:before 	{ content: "\f059"; color: #016aec; padding-left: 2px; }
+.imageset.icon_topic_deleted:before	 	{ content: "\f1b8"; color: #5CFF00; padding-left: 2px; }
+.imageset.icon_topic_attach:before 		{ content: "\f0c6"; color: #FFFFFF; padding-left: 2px; }
+.imageset.icon_topic_poll:before 		{ content: "\f080"; color: #016aec; padding-left: 2px; }
 
 /* English images for fallback */
 .imageset.icon_user_online {

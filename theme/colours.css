@@ -34,7 +34,7 @@ hr {
 }
 
 .search-header {
-	box-shadow: 0 0 10px #0075B0;
+	box-shadow: 0 0 3px #1163d3;
 }
 /* Round cornered boxes and backgrounds
 ---------------------------------------- */
@@ -244,7 +244,6 @@ Colours and backgrounds for links.css
 
 a { color: #888888; }
 a:hover	{ color: #1163d3; }
-a:active	{ color: #d23636; }
 
 /* Links on gradient backgrounds */
 .forumbg .header a, .forabg .header a, th a {
@@ -616,7 +615,7 @@ Colours and backgrounds for buttons.css
 .dropdown-visible .dropdown-select,
 .dropdown-visible .dropdown-select:hover,
 .nojs .dropdown-container:hover .dropdown-select {
-	background-color: #d23636;
+	background-color: #09499e;
 	color: #FFF;
 }
 
@@ -854,8 +853,8 @@ Colours and backgrounds for cp.css
 }
 
 #tabs .tab > a:hover {
-	background: #d23636;
-	color: #282828;
+	background: #0c55b8;
+	color: #cccccc;
 }
 
 #tabs .activetab > a,
