@@ -4,8 +4,8 @@ Colours and backgrounds for common.css
 -------------------------------------------------------------- */
 
 html, body {
-	color: #CCCCCC;
-    background: url("./images/bg.jpg") repeat fixed #1f1f1f;
+	color: rgb(187, 187, 187);
+	background: rgb(42, 42, 42) none repeat scroll 0 0;
 }
 
 h1 {
@@ -1035,7 +1035,7 @@ fieldset.quick-login input.inputbox {
 ----------------------------------------*/
 
 #message-box textarea {
-	color: #FFFFFF;
+	color: #bbb;
 }
 
 #message-box textarea.drag-n-drop {

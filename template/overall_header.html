@@ -47,7 +47,6 @@
 <link href="{T_STYLESHEET_LINK}" rel="stylesheet">
 <link href="{T_STYLESHEET_LANG_LINK}" rel="stylesheet">
 <link href="{T_THEME_PATH}/responsive.css?assets_version={T_ASSETS_VERSION}" rel="stylesheet" media="all and (max-width: 700px), all and (max-device-width: 700px)">
-<link href='http://fonts.googleapis.com/css?family=Electrolize' rel="stylesheet" type="text/css" media="screen, projection" />
 
 <!-- IF S_CONTENT_DIRECTION eq 'rtl' -->
 	<link href="{T_THEME_PATH}/bidi.css?assets_version={T_ASSETS_VERSION}" rel="stylesheet">
@@ -69,7 +68,11 @@
 
 </head>
 <body id="phpbb" class="nojs notouch section-{SCRIPT_NAME} {S_CONTENT_DIRECTION} {BODY_CLASS}">
+
+<!-- EVENT overall_header_body_before -->
+
 <div id="layout-wrapper">
+	<a id="top" class="anchor" accesskey="t"></a>
 <div class="header-border">
 {SITE_DESCRIPTION}
 
@@ -112,14 +115,9 @@
 </div>
 
 <!-- EVENT overall_header_navbar_before -->
-
 <!-- INCLUDE navbar_header.html -->
 
-<!-- EVENT overall_header_body_before -->
-
 <div id="wrap">
-	<a id="top" class="anchor" accesskey="t"></a>
-
 	<!-- EVENT overall_header_page_body_before -->
 
 	<a id="start_here" class="anchor"></a>
