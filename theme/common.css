@@ -1155,6 +1155,12 @@ ul.linklist:after,
 	text-transform: none;
 }
 
+.dropdown-extended .header:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
 .dropdown-extended .footer {
 	text-align: center;
 	font-size: 1.1em;
@@ -1257,7 +1263,7 @@ ul.linklist:after,
 }
 
 .compact #quick-links a.responsive-menu-link {
-	width: 0;
+	font-size: 0;
 	overflow: hidden;
 	white-space: nowrap;
 }
