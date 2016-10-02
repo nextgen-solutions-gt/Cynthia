@@ -5,8 +5,8 @@ Have been implemented large improvements among which we highlight.
 
 ## Style Support
 
-If you have questions or need help you can visit my official site [Melvin Garcia] (http://www.xeronix.org/).
+If you have questions or need help you can visit my official site [Xeronix] (http://www.xeronix.org/).
 
 ### My Personal website
 
-For any suggestion please visit my personal website (http://melvingarcia.com).
+For any suggestion please visit my personal website [Melvin Garcia] (http://melvingarcia.com/).
