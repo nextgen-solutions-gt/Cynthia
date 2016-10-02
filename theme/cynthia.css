@@ -51,31 +51,8 @@
 	text-decoration: none;	
 }
 
-#breadcrumb-cynthia li.breadcrumbs:before, #breadcrumb-cynthia-footer li.breadcrumbs:before  {
-	content: '\f015';
-	display: block;
-	position: absolute;
-	font-family: FontAwesome;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 14px;
-	text-decoration: none;
-	padding: 0 8px 0 0;	
-	left: 0;
-	top: 0;
-	color: #888;
-}
-
 #breadcrumb-cynthia .crumb a, #breadcrumb-cynthia-footer .crumb a   {
 	position: relative;
-}
-
-#breadcrumb-cynthia .crumb a:before, #breadcrumb-cynthia-footer .crumb a:before {
-	content: '';
-	width: 100%;
-	height: 1px;
-	position: absolute;
-	bottom: 7px;
 }
 
 /* Forum index */
