@@ -1,4 +1,4 @@
-## Cynthia Style for phpBB 3.1.x
+## Cynthia Style for phpBB 3.0.x
 
 The Cynthia style is a simple and pleasant style, also has an easy to use interface.
 Have been implemented large improvements among which we highlight.
