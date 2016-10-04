@@ -341,10 +341,10 @@ a.top2 {
 }
 
 /* Arrow links  */
-a.up		{ background-image: url("{T_THEME_PATH}/images/arrow_up.gif") }
-a.down		{ background-image: url("{T_THEME_PATH}/images/arrow_down.gif") }
-a.left		{ background-image: url("{T_THEME_PATH}/images/arrow_left.gif") }
-a.right		{ background-image: url("{T_THEME_PATH}/images/arrow_right.gif") }
+a.up		{ background-image: url("{T_THEME_PATH}/images/arrow_up.gif"); }
+a.down		{ background-image: url("{T_THEME_PATH}/images/arrow_down.gif"); }
+a.left		{ background-image: url("{T_THEME_PATH}/images/arrow_left.gif"); }
+a.right		{ background-image: url("{T_THEME_PATH}/images/arrow_right.gif"); }
 
 a.up:hover {
 	background-color: transparent;
@@ -394,6 +394,7 @@ li.row {
 	border-top-color:  #313131;
 	border-bottom-color: #313131;
 }
+
 /*
 li.row strong {
 	color: #000000;
@@ -660,9 +661,9 @@ Colours and backgrounds for buttons.css
 .reply-icon span	{ background-image: url("{IMG_BUTTON_TOPIC_REPLY_SRC}"); }
 .post-icon span		{ background-image: url("{IMG_BUTTON_TOPIC_NEW_SRC}"); }
 .locked-icon span	{ background-image: url("{IMG_BUTTON_TOPIC_LOCKED_SRC}"); }
-.pmreply-icon span	{ background-image: url("{IMG_BUTTON_PM_REPLY_SRC}") ;}
-.newpm-icon span 	{ background-image: url("{IMG_BUTTON_PM_NEW_SRC}") ;}
-.forwardpm-icon span	{ background-image: url("{IMG_BUTTON_PM_FORWARD_SRC}") ;}
+.pmreply-icon span	{ background-image: url("{IMG_BUTTON_PM_REPLY_SRC}"); }
+.newpm-icon span	{ background-image: url("{IMG_BUTTON_PM_NEW_SRC}"); }
+.forwardpm-icon span	{ background-image: url("{IMG_BUTTON_PM_FORWARD_SRC}"); }
 
 a.print {
 	background-image: url("{T_THEME_PATH}/images/icon_print.gif");
