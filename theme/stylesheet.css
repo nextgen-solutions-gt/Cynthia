@@ -1,20 +1,26 @@
 /*  phpBB3 Style Sheet
     --------------------------------------------------------------
 	Style name:			Cynthia
-	Based on style:		prosilver (the default phpBB 3.1.x style)
+	Based on style:		prosilver (the default phpBB 3.0.x style)
 	Original author:	Tom Beddard ( http://www.subblue.com/ )
-	Modified by:		Melvin García ( http://www.melvingarcia.com/ )
+	Modified by:		Melvin Garcia ( http://www.melvingarcia.com/ )
     --------------------------------------------------------------
 */
+@font-face {
+    font-family: 'Electrolize';
+    src: url('{T_THEME_PATH}/fonts/Electrolize-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
-@import url(https://fonts.googleapis.com/css?family=Electrolize);
+@import url("font-awesome.css");
 @import url("common.css");
 @import url("links.css");
 @import url("content.css");
 @import url("buttons.css");
 @import url("cp.css");
 @import url("forms.css");
+@import url("tweaks.css");
 @import url("colours.css");
-@import url("imageset.css");
 @import url("cynthia.css");
-@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
+ 

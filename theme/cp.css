@@ -20,48 +20,65 @@
 	padding: 0;
 }
 
-.panel-container .panel p {
+#cp-main h3, #cp-main hr, #cp-menu hr {
+	border-color: #bfbfbf;
+}
+
+#cp-main .panel p {
 	font-size: 1.1em;
 }
 
-.panel-container .panel ol {
+#cp-main .panel ol {
 	margin-left: 2em;
 	font-size: 1.1em;
 }
 
-.panel-container .panel li.row {
-	border-bottom: 1px solid transparent;
-	border-top: 1px solid transparent;
+#cp-main .panel li.row {
+	border-bottom: 1px solid #cbcbcb;
+	border-top: 1px solid #3c3c3c;
 }
 
 ul.cplist {
 	margin-bottom: 5px;
-	border-top: 1px solid transparent;
+	border-top: 1px solid #cbcbcb;
 }
 
-.panel-container .panel li.header dd, .panel-container .panel li.header dt {
+#cp-main .panel li.header dd, #cp-main .panel li.header dt {
+	color: #000000;
 	margin-bottom: 2px;
 }
 
-.panel-container table.table1 {
+#cp-main table.table1 {
 	margin-bottom: 1em;
 }
 
-.panel-container table.table1 thead th {
+#cp-main table.table1 thead th {
+	color: #333333;
 	font-weight: bold;
-	border-bottom: 1px solid transparent;
+	border-bottom: 1px solid #333333;
 	padding: 5px;
 }
 
-.panel-container table.table1 tbody th {
+#cp-main table.table1 tbody th {
 	font-style: italic;
 	background-color: transparent !important;
 	border-bottom: none;
 }
 
+#cp-main .pagination {
+	float: right;
+	width: auto;
+	padding-top: 1px;
+}
+
+#cp-main .postbody p {
+	font-size: 1.1em;
+}
+
 #cp-main .pm-message {
-	border: 1px solid transparent;
+	border: 1px solid #e2e2e2;
 	margin: 10px 0;
+	background-color: #333333;
 	width: auto;
 	float: none;
 }
@@ -72,10 +89,6 @@ ul.cplist {
 
 #cp-main .postbody h3, #cp-main .box2 h3 {
 	margin-top: 0;
-}
-
-.panel-container .postbody p.author {
-	font-size: 1.1em;	
 }
 
 #cp-main .buttons {
@@ -96,120 +109,126 @@ ul.cplist {
 	margin-bottom: 0px;
 }
 
-/* CP tabs shared
-----------------------------------------*/
-#tabs, #minitabs {
-	line-height: normal;
+.tabs-container #minitabs {
+	float: right;
+	margin-top: 19px;
 }
 
-#tabs > ul, #minitabs > ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	position: relative;
-}
-
-#tabs .tab, #minitabs .tab {
+.tabs-container:after {
 	display: block;
-	float: left;
-	font-size: 1em;
-	font-weight: bold;
-	line-height: 1.4em;
-}
-
-#tabs .tab > a, #minitabs .tab > a {
-	display: block;
-	padding: 5px 9px;
-	position: relative;
-	text-decoration: none;
-	white-space: nowrap;
-	cursor: pointer;
+	clear: both;
+	content: '';
 }
 
 /* CP tabbed menu
 ----------------------------------------*/
 #tabs {
-	margin: 20px 0 0 7px;
+	line-height: normal;
+	margin: 20px 0 -1px 7px;
+	min-width: 570px;
 }
 
-#tabs .tab > a {
-	border: 1px solid transparent;
-	margin: 1px 1px 0 0;
+#tabs ul {
+	margin:0;
+	padding: 0;
+	list-style: none;
 }
 
-#tabs .activetab > a {
-	margin-top: 0;
+#tabs li {
+	display: inline;
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+#tabs a {
+	float: left;
+	background: none no-repeat 0% -35px;
+	margin: 0 1px 0 0;
+	padding: 0 0 0 5px;
+	text-decoration: none;
+	position: relative;
+	cursor: pointer;
+}
+
+#tabs a span {
+	float: left;
+	display: block;
+	background: none no-repeat 100% -35px;
+	padding: 6px 10px 6px 5px;
+	color: #828282;
+	white-space: nowrap;
+}
+
+#tabs a:hover span {
+	color: #bcbcbc;
+}
+
+#tabs .activetab a {
+	background-position: 0 0;
+	border-bottom: 1px solid #1163d2;
+}
+
+#tabs .activetab a span {
+	background-position: 100% 0;
 	padding-bottom: 7px;
+	color: #1163d2;
+}
+
+#tabs a:hover {
+	background-position: 0 -70px;
+}
+
+#tabs a:hover span {
+	background-position:100% -70px;
+}
+
+#tabs .activetab a:hover {
+	background-position: 0 0;
+}
+
+#tabs .activetab a:hover span {
+	color: #000000;
+	background-position: 100% 0;
 }
 
 /* Mini tabbed menu used in MCP
 ----------------------------------------*/
 #minitabs {
-	float: right;
-	margin: 15px 7px 0 0;
-	max-width: 50%;
+	line-height: normal;
+	margin: -20px 7px 0 0;
 }
 
-#minitabs .tab {
-	float: right;
+#minitabs ul {
+	margin:0;
+	padding: 0;
+	list-style: none;
 }
 
-#minitabs .tab > a {
+#minitabs li {
+	display: block;
+	float: right;
+	padding: 0 10px 4px 10px;
+	font-size: 1em;
+	font-weight: bold;
+	background-color: #f2f2f2;
 	margin-left: 2px;
 }
 
-#minitabs .tab > a:hover {
+#minitabs a {
+}
+
+#minitabs a:hover {
 	text-decoration: none;
 }
 
-/* Responsive tabs
-----------------------------------------*/
-.responsive-tab {
-	position: relative;
+#minitabs li.activetab {
+	background-color: #3c3c3c;
 }
 
-.responsive-tab > a.responsive-tab-link {
-	display: block;
-	font-size: 1.6em;
-	position: relative;
-	width: 16px;
-	line-height: 0.9em;
-	text-decoration: none;
-}
-
-.responsive-tab .responsive-tab-link:before {
-	content: '';
-	position: absolute;
-	left: 10px;
-	top: 7px;
-	height: .125em;
-	width: 14px;
-	border-bottom: 0.125em solid transparent;
-	border-top: 0.375em double transparent;
-}
-
-#tabs .dropdown, #minitabs .dropdown {
-	top: 20px;
-	margin-right: -2px;
-	font-size: 1.1em;
-	font-weight: normal;
-}
-
-#minitabs .dropdown {
-	margin-right: -4px;
-}
-
-#tabs .dropdown-up .dropdown, #minitabs .dropdown-up .dropdown {
-	bottom: 20px;
-	top: auto;
-}
-
-#tabs .dropdown li {
-	text-align: right;
-}
-
-#minitabs .dropdown li {
-	text-align: left;
+#minitabs li.activetab a, #minitabs li.activetab a:hover {
+	color: #333333;
 }
 
 /* UCP navigation menu
@@ -221,15 +240,15 @@ ul.cplist {
 }
 
 #navigation ul {
-	list-style: none;
+	list-style:none;
 }
 
 /* Default list state */
 #navigation li {
-	display: inline;
-	font-weight: bold;
 	margin: 1px 0;
 	padding: 0;
+	font-weight: bold;
+	display: inline;
 }
 
 /* Link styles for the sub-section links */
@@ -238,10 +257,27 @@ ul.cplist {
 	padding: 5px;
 	margin: 1px 0;
 	text-decoration: none;
+	font-weight: bold;
+	color: #333;
+	background: #cfcfcf none repeat-y 100% 0;
 }
 
 #navigation a:hover {
 	text-decoration: none;
+	background-color: #c6c6c6;
+	color: #bcbcbc;
+	background-image: none;
+}
+
+#navigation #active-subsection a {
+	display: block;
+	color: #d3d3d3;
+	background-color: #3c3c3c;
+	background-image: none;
+}
+
+#navigation #active-subsection a:hover {
+	color: #d3d3d3;
 }
 
 /* Preferences pane layout
@@ -250,18 +286,64 @@ ul.cplist {
 	border-bottom: none;
 	padding: 0;
 	margin-left: 10px;
+	color: #333333;
+}
+
+#cp-main .panel {
+	background-color: #3c3c3c;
+}
+
+#cp-main .pm {
+	background-color: #333333;
+}
+
+#cp-main span.corners-top, #cp-menu span.corners-top {
+	background-image: none;
+}
+
+#cp-main span.corners-top span, #cp-menu span.corners-top span {
+	background-image: none;
+}
+
+#cp-main span.corners-bottom, #cp-menu span.corners-bottom {
+	background-image: none;
+}
+
+#cp-main span.corners-bottom span, #cp-menu span.corners-bottom span {
+	background-image: none;
+}
+
+/* Topicreview */
+#cp-main .panel #topicreview span.corners-top, #cp-menu .panel #topicreview span.corners-top {
+	background-image: none;
+}
+
+#cp-main .panel #topicreview span.corners-top span, #cp-menu .panel #topicreview span.corners-top span {
+	background-image: none;
+}
+
+#cp-main .panel #topicreview span.corners-bottom, #cp-menu .panel #topicreview span.corners-bottom {
+	background-image: none;
+}
+
+#cp-main .panel #topicreview span.corners-bottom span, #cp-menu .panel #topicreview span.corners-bottom span {
+	background-image: none;
 }
 
 /* Friends list */
 .cp-mini {
+	background-color: #3c3c3c;
+	padding: 0 5px;
 	margin: 10px 15px 10px 5px;
-	max-height: 200px;
-	overflow-y: auto;
-	padding: 5px 10px;
+}
+
+.cp-mini span.corners-top, .cp-mini span.corners-bottom {
+	margin: 0 -5px;
 }
 
 dl.mini dt {
 	font-weight: bold;
+	color: #676767;
 }
 
 dl.mini dd {
@@ -280,6 +362,25 @@ dl.mini dd {
 ----------------------------------------*/
 #pm-menu {
 	line-height: 2.5em;
+}
+
+/* PM panel adjustments */
+.reply-all a.left {
+	background-position: 3px 60%;
+}
+
+.reply-all a.left:hover {
+	background-position: 0px 60%;
+}
+
+.reply-all {
+	font-size: 11px;
+	padding-top: 5px;
+}
+
+/* PM Message history */
+.current {
+	color: #999999;
 }
 
 /* Defined rules list for PM options */
@@ -302,16 +403,31 @@ ol.def-rules li {
 }
 
 .pmlist li.pm_message_reported_colour, .pm_message_reported_colour {
-	border-left-color: transparent;
-	border-right-color: transparent;
+	border-left-color: #bcbcbc;
+	border-right-color: #bcbcbc;
 }
 
-.pmlist li.pm_marked_colour, .pm_marked_colour,
-.pmlist li.pm_replied_colour, .pm_replied_colour,
-.pmlist li.pm_friend_colour, .pm_friend_colour,
+.pmlist li.pm_marked_colour, .pm_marked_colour {
+	padding: 0;
+	border: solid 3px #ffffff;
+	border-width: 0 3px;
+}
+
+.pmlist li.pm_replied_colour, .pm_replied_colour {
+	padding: 0;
+	border: solid 3px #c2c2c2;
+	border-width: 0 3px;
+}
+
+.pmlist li.pm_friend_colour, .pm_friend_colour {
+	padding: 0;
+	border: solid 3px #bdbdbd;
+	border-width: 0 3px;
+}
+
 .pmlist li.pm_foe_colour, .pm_foe_colour {
 	padding: 0;
-	border: solid 3px transparent;
+	border: solid 3px #000000;
 	border-width: 0 3px;
 }
 
@@ -330,44 +446,11 @@ ol.def-rules li {
 	margin: 10px;
 	padding: 5px;
 	width: auto;
-	border: 1px solid transparent;
+	background: #FFFFFF;
+	border: 1px solid #CCC;
 	text-align: center;
 }
 
-/* Responsive *CP navigation
-----------------------------------------*/
-@media only screen and (max-width: 900px), only screen and (max-device-width: 900px)
-{
-	.nojs #tabs a span, .nojs #minitabs a span {
-		max-width: 40px;
-		overflow: hidden;
-		text-overflow: ellipsis;
-		letter-spacing: -.5px;
-	}
-
-	#cp-menu, #navigation, #cp-main {
-		float: none;
-		width: auto;
-		margin: 0;
-	}
-
-	#navigation {
-		padding: 0;
-		margin: 0 auto;
-		max-width: 320px;
-	}
-
-	#navigation a {
-		background-image: none;
-	}
-
-	#navigation li:first-child a {
-		border-top-left-radius: 5px;
-		border-top-right-radius: 5px;
-	}
-
-	#navigation li:last-child a {
-		border-bottom-left-radius: 5px;
-		border-bottom-right-radius: 5px;
-	}
+#gallery label:hover {
+	background-color: #EEE;
 }

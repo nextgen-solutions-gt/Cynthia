@@ -1,26 +1,22 @@
-/* Header Cynthia */
-#header-cynthia {
-    background-image: url("./images/header.png");
-	background-repeat:  no-repeat;
+#header-bd {
+    background-image: url("{T_THEME_PATH}/images/logo.png");
 	padding: 5px;
     color: #FFFFFF;
-	min-height: 150px;
-	margin-bottom: 10px;
-}
-
-/* Menu user Cynthia */
-.menu-user-cynthia {
-    background: #1163d3;
-	padding: 4px;
-	height: auto;
+	height: 150px;
+    /*border-bottom: 5px solid #1163D3; /*bottom border is 3px*/
 	margin-bottom: 15px;
-    font-size: 13px;
-    list-style-type: none;	
 }
 
-.menu-user-cynthia a { color: #FFFFFF;}
+.menu-user {
+    background: #1163D3;
+	padding: 10px;
+	height: 15px;
+	margin-bottom: 15px;
+    font-size: 13px;	
+}
 
-/* Header border */
+.menu-user a { color: #FFFFFF;}
+
 .header-border {
    background: #212121;
    text-transform: uppercase;   
@@ -28,57 +24,18 @@
    padding: 10px 0 0 10px;
    text-align: left;
    overflow: hidden;
-   border-bottom: #000 solid 1px;
    *height: 30px;
 }
 
-/* Breacrumb Cynthia */
-#breadcrumb-cynthia {
-    background: #1c1c1c;
+.breadcrumb-bd {
+    background: #212121;
+	text-transform: uppercase;
+	font-weight: bold;
     color: #FFFFFF;
     padding: 5px;
 	margin-bottom: 15px;
 }
 
-#breadcrumb-cynthia-footer{
-    background: #212121;
-    color: #FFFFFF;
-    padding: 5px;
-	top: 0;
-}
-
-#breadcrumb-cynthia, #breadcrumb-cynthia-footer a {
-	text-decoration: none;	
-}
-
-#breadcrumb-cynthia li.breadcrumbs:before, #breadcrumb-cynthia-footer li.breadcrumbs:before  {
-	content: '\f015';
-	display: block;
-	position: absolute;
-	font-family: FontAwesome;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 14px;
-	text-decoration: none;
-	padding: 0 8px 0 0;	
-	left: 0;
-	top: 0;
-	color: #888;
-}
-
-#breadcrumb-cynthia .crumb a, #breadcrumb-cynthia-footer .crumb a   {
-	position: relative;
-}
-
-#breadcrumb-cynthia .crumb a:before, #breadcrumb-cynthia-footer .crumb a:before {
-	content: '';
-	width: 100%;
-	height: 1px;
-	position: absolute;
-	bottom: 7px;
-}
-
-/* Forum index */
 .row1 {
 	background-color: #212121;
 }
@@ -92,6 +49,7 @@
 }
 
 li.header dl.icon dt {
+	padding-left: 5px;
 	font-size: 16px;
 	font-weight: bold;
 	color: #ffffff;
@@ -101,7 +59,6 @@ li.header dl.icon dt {
 li.header dl.icon dt a {
 	color: #ffffff;
 }
-
 
 dd.topics, dd.posts, dd.views {
 	font-size: 14px;
@@ -115,110 +72,45 @@ li.header dd.topics, li.header dd.posts, li.header dd.lastpost, li.header dd.vie
 	text-transform: none;
 }
 
-li.header dd.lastpost { width: auto; }
-
 ul.topiclist li {
 	font-size: 12px;
 	color: #a5a4a4;
 }
 
-/* Float search direction */
-.float-direction-ltr { 
-	float:right;
+.right {float:right;}
+.left {float:left;}
+
+.underlinemenu{
+    width: 48%; /* defined the width from the menu */
+	float: right; /* Remove this line if you choose a width of 100% */
 }
 
-/*  Menu Cynthia */
-#header-menu, .nav-menu{
-    display: block;
+.underlinemenu ul{
+    padding: 6px 0 7px 0; /*6px should equal top padding of "ul li a" below, 7px should equal bottom padding + bottom border of "ul li a" below*/
+    margin: 0;
+    text-align: right; /*set value to "left", "center", or "right"*/
 }
 
-/* We define a 100% width and a fixed height for our menu */
-#header-menu {
-    background: #323232;
-    height:50px;
-    position: relative;
-    width: 100%;
-    z-index: 2
+.underlinemenu ul li{
+    display: inline;
 }
 
-/* The logo will be floated to the left */
-#logo-top{
-    background: url("./images/site_logo.png") no-repeat 0 0;
-    display: block;
-    float: left;
-    margin: 10px 10px 0;
-    min-width: 100px;
-    height: 35px;
-    text-indent: -9999px
+.underlinemenu ul li a{
+    font-size: 1.5em;
+    color: #939393;
+    padding: 6px 3px 4px 3px; /*top padding is 6px, bottom padding is 4px*/
+    margin-right: 20px; /*spacing between each menu link*/
+    text-decoration: none;
+    border-bottom: 3px solid #1163D3; /*bottom border is 3px*/
 }
 
-/* Our nav with id #menu-mobile float it to the right */
-#menu-mobile{float: right;}   
-
-/* Remove styles by default of the ul tag */
-#menu-mobile ul{
-	list-style: none;
-    font-size: 14px;
-}
-        
-/* We focus and put the text in uppercase */
-#menu-mobile li{
-	display: block;
-	float: left;
-	text-transform: uppercase;
-	text-align: center;
-}
-            
-/* We give style to our links */
-#menu-mobile li a{
-	display: block;
-	color: #FFF;
-	text-decoration: none;
-	height: 50px;
-	line-height: 50px;
-	padding: 0 26px;
+.underlinemenu ul li a:hover, .underlinemenu ul li a.selected{
+    border-bottom-color: gray;
 }
 
-#menu-mobile li a:hover{
-	background: #1163d3;
-	color: #FFF;
+.hidden {
+  display: none;
+  visibility: hidden;
 }
 
-.menu-mobile-active a  {
-	background: #2e2e2e;
-	color: #FFF;
-}				
-    
-/* #nav-mobile styles and hide it */
-#nav-mobile{
-	display: none;
-	background: url("./images/nav.png") no-repeat center center;
-	float: right;
-	width: 50px;
-	height: 50px;
-	position: absolute;
-	right: 0;
-	top:0;
-	opacity: .6;
-} 
-  
-/* We'll add this class to #nav-mobile, when the mobile menu has been deployed */
-#nav-mobile.nav-active{
-	opacity: 1;
-}
-
-#menu-mobile  ul li:hover > ul.submenu{
-	display: inherit;
-}
-
-.submenu {
-	background-color: #323232;
-	width: 145px;
-	position: absolute;
-	display: none;
-}
-
-.submenu li {
-	clear: both;
-	width: 100%;
-}
+ 

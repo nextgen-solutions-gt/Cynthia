@@ -11,6 +11,7 @@ fieldset {
 
 input {
 	font-weight: normal;
+	cursor: pointer;
 	vertical-align: middle;
 	padding: 0 3px;
 	font-size: 1em;
@@ -22,22 +23,18 @@ select {
 	font-weight: normal;
 	cursor: pointer;
 	vertical-align: middle;
-	border: 1px solid transparent;
+	border: 1px solid #666666;
 	padding: 1px;
+	background-color: #FAFAFA;
 	font-size: 1em;
-}
-
-select:focus {
-	outline-style: none;
 }
 
 option {
 	padding-right: 1em;
 }
 
-select optgroup option {
-	padding-right: 1em;
-	font-family: 'Electrolize', Verdana, Helvetica, Arial, sans-serif;
+option.disabled-option {
+	color: graytext;
 }
 
 textarea {
@@ -51,6 +48,7 @@ textarea {
 label {
 	cursor: default;
 	padding-right: 5px;
+	color: #676767;
 }
 
 label input {
@@ -68,7 +66,7 @@ fieldset dl {
 }
 
 fieldset dt {
-	float: left;
+	float: left;	
 	width: 40%;
 	text-align: left;
 	display: block;
@@ -91,12 +89,16 @@ fieldset.fields1 dd {
 	border-left-width: 0;
 }
 
+fieldset.fields1 {
+	background-color: transparent;
+}
+
 fieldset.fields1 div {
 	margin-bottom: 3px;
 }
 
 /* Set it back to 0px for the reCaptcha divs: PHPBB3-9587 */
-fieldset.fields1 #recaptcha_widget_div div, fieldset.fields1 .live-search div {
+fieldset.fields1 #recaptcha_widget_div div {
 	margin-bottom: 0;
 }
 
@@ -119,6 +121,7 @@ dt label {
 
 dd label {
 	white-space: nowrap;
+	color: #333;
 }
 
 dd input, dd textarea {
@@ -129,17 +132,25 @@ dd select {
 	width: auto;
 }
 
-dd select[multiple] {
-	width: 100%;
-}
-
 dd textarea {
 	width: 85%;
 }
 
 /* Hover effects */
+fieldset dl:hover dt label {
+	color: #000000;
+}
+
+fieldset.fields2 dl:hover dt label {
+	color: inherit;
+}
+
 #timezone {
 	width: 95%;
+}
+
+* html #timezone {
+	width: 50%;
 }
 
 /* Quick-login on index page */
@@ -155,6 +166,7 @@ fieldset.quick-login input.inputbox {
 	width: 15%;
 	vertical-align: middle;
 	margin-right: 5px;
+	background-color: #f3f3f3;
 }
 
 fieldset.quick-login label {
@@ -205,6 +217,20 @@ fieldset.forum-selection2 {
 	float: right;
 }
 
+/* Jumpbox */
+fieldset.jumpbox {
+	text-align: right;
+	margin-top: 15px;
+	height: 2.5em;
+}
+
+fieldset.quickmod {
+	width: 50%;
+	float: right;
+	text-align: right;
+	height: 2.5em;
+}
+
 /* Submit button fieldset */
 fieldset.submit-buttons {
 	text-align: center;
@@ -237,19 +263,12 @@ fieldset.submit-buttons input {
 
 #message-box textarea {
 	font-family: 'Electrolize', "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
-	width: 450px;
+	/*width: 450px;*/
 	height: 270px;
 	min-width: 100%;
 	max-width: 100%;
 	font-size: 1.2em;
-	resize: vertical;
-	outline: 3px dashed transparent;
-	outline-offset: -4px;
-	-webkit-transition: all .5s ease;
-	-moz-transition: all .5s ease;
-	-ms-transition: all .5s ease;
-	-o-transition: all .5s ease;
-	transition: all .5s ease;	
+	color: #333333;
 }
 
 /* Emoticons panel */
@@ -265,19 +284,26 @@ fieldset.submit-buttons input {
 /* Input field styles
 ---------------------------------------- */
 .inputbox {
-	border: 1px solid transparent;
+	background-color: #FFFFFF;
+	border: 1px solid #c0c0c0;
+	color: #333333;
 	padding: 2px;
+	cursor: text;
 }
 
-.inputbox:hover, .inputbox:focus {
-	border: 1px solid transparent;
-	outline-style: none;
+.inputbox:hover {
+	border: 1px solid #eaeaea;
 }
 
-input.inputbox	{ width: 85%; }
+.inputbox:focus {
+	border: 1px solid #eaeaea;
+	color: #4b4b4b;
+}
+
+input.inputbox	{ width: 85%;}
 input.medium	{ width: 50%; }
 input.narrow	{ width: 25%; }
-input.tiny	{ width: 150px; }
+input.tiny		{ width: 125px; }
 
 textarea.inputbox {
 	width: 85%;
@@ -285,23 +311,6 @@ textarea.inputbox {
 
 .autowidth {
 	width: auto !important;
-}
-
-input[type="number"] {
-	-moz-padding-end: inherit;
-}
-
-input[type="search"] {
-	-webkit-appearance: textfield;
-	-webkit-box-sizing: content-box;
-}
-
-input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-results-button, input[type="search"]::-webkit-search-results-decoration {
-	display: none;
-}
-
-input[type="search"]::-webkit-search-cancel-button {
-	cursor: pointer;
 }
 
 /* Form button styles
@@ -315,12 +324,13 @@ a.button1, input.button1, input.button3, a.button2, input.button2 {
 	padding-top: 1px;
 	padding-bottom: 1px;
 	font-family: 'Electrolize', "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
-	background: transparent none repeat-x top left;
+	color: #000;
+	background: #FAFAFA none repeat-x top left;
 }
 
 a.button1, input.button1 {
 	font-weight: bold;
-	border: 1px solid transparent;
+	border: 1px solid #666666;
 }
 
 input.button3 {
@@ -332,18 +342,15 @@ input.button3 {
 	font-variant: small-caps;
 }
 
-input[type="button"], input[type="submit"], input[type="reset"], input[type="checkbox"], input[type="radio"] {
-	cursor: pointer;
-}
-
 /* Alternative button */
 a.button2, input.button2, input.button3 {
-	border: 1px solid transparent;
+	border: 1px solid #666666;
 }
 
 /* <a> button in the style of the form buttons */
 a.button1, a.button1:link, a.button1:visited, a.button1:active, a.button2, a.button2:link, a.button2:visited, a.button2:active {
 	text-decoration: none;
+	color: #000000;
 	padding: 2px 8px;
 	line-height: 250%;
 	vertical-align: text-bottom;
@@ -352,76 +359,24 @@ a.button1, a.button1:link, a.button1:visited, a.button1:active, a.button2, a.but
 
 /* Hover states */
 a.button1:hover, input.button1:hover, a.button2:hover, input.button2:hover, input.button3:hover {
-	border: 1px solid transparent;
+	border: 1px solid #BCBCBC;
 	background-position: 0 100%;
+	color: #BCBCBC;
 }
 
 input.disabled {
 	font-weight: normal;
-}
-
-/* Focus states */
-input.button1:focus, input.button2:focus, input.button3:focus {
-	outline-style: none;
+	color: #666666;
 }
 
 /* Topic and forum Search */
 .search-box {
+	margin-top: 3px;
+	margin-left: 5px;
 	float: left;
 }
 
-.search-box .inputbox {
-	background-image: none;
-	border-right-width: 0;
-	float: left;
-	height: 24px;
-	padding: 3px;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-.search-box button {
-	float: left;
-}
-
-.search-box button.search-icon {
-	border-radius: 0;
-	font-size: 0;
-	height: 24px;
-	margin: 0;
-	padding: 3px 5px;
-}
-
-.search-box a.button {
-	border-left-width: 0;
-	border-radius: 0;
-	font-size: 0;
-	margin: 0;
-	padding: 2px 5px 2px 3px;
-}
-
-/* Search box (header)
---------------------------------------------- */
-.search-header {
-	border-radius: 0;
-	display: block;
-	float: right;
-	margin-right: 10px;
-	margin-top: -2px;
-}
-
-.search-header .inputbox { border: 0; }
-
-.search-header button {
-	border-top: 0;
-	border-bottom: 0;
-}
-
-.search-header a.button {
-	border: 0;
-	border-left: 1px;
-	padding: 3px 5px 3px 4px;
+.search-box input {
 }
 
 input.search {
@@ -435,3 +390,4 @@ input.search {
 .medium { width: 50%;}
 .narrow { width: 25%;}
 .tiny { width: 10%;}
+
