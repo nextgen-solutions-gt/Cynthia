@@ -1,9 +1,9 @@
-.attach-panel-multi {
+#attach-panel-multi {
 	display: none;
 	margin-bottom: 1em;
 }
 
-.file-list td {
+#file-list td {
 	vertical-align: middle;
 }
 
@@ -37,11 +37,11 @@
 	float: right;
 }
 
-.nojs .file-inline-bbcode {
+#attach-row-tpl, .nojs .file-inline-bbcode {
 	display: none;
 }
 
-.file-total-progress {
+#file-total-progress {
 	height: 2px;
 	display: block;
 	position: relative;
@@ -49,13 +49,13 @@
 }
 
 .file-progress {
-	background-color: #CCCCCC;
+	background-color: #323232;
 	display:inline-block;
 	height: 8px;
 	width: 50px;
 }
 
-.file-progress-bar, .file-total-progress-bar {
+.file-progress-bar, #file-total-progress-bar {
 	background-color: green;
 	display: block;
 	height: 100%;
