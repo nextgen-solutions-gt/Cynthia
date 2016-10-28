@@ -555,7 +555,7 @@ fieldset.polls dd div {
 ----------------------------------------*/
 .postprofile {
 	color: #666666;
-	border-color: #FFFFFF;
+	border-color: #858585;
 }
 
 .pm .postprofile {
@@ -949,7 +949,7 @@ fieldset.fields2 dl:hover dt label {
 
 /* Quick-login on index page */
 fieldset.quick-login input.inputbox {
-	background-color: #F2F3F3;
+	background-color: #212121;
 }
 
 /* Posting page styles

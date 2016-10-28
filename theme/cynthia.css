@@ -47,14 +47,6 @@
 	top: 0;
 }
 
-#breadcrumb-cynthia, #breadcrumb-cynthia-footer a {
-	text-decoration: none;	
-}
-
-#breadcrumb-cynthia .crumb a, #breadcrumb-cynthia-footer .crumb a   {
-	position: relative;
-}
-
 /* Forum index */
 .row1 {
 	background-color: #212121;
