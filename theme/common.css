@@ -88,7 +88,6 @@ p.right {
 }
 
 p.jumpbox-return {
-	margin-top: 1em;
 	margin-top: 10px;
 	margin-bottom: 0;
 	float: left;
@@ -340,23 +339,24 @@ ul.linklist.bulletin > li.no-bulletin:before {
 	vertical-align: top;
 }
 
-.header-avatar:hover {
+a.header-avatar,
+a.header-avatar:hover {
 	text-decoration: none;
 }
 
-.header-avatar img {
+a.header-avatar img {
 	margin-bottom: 2px;
 	max-height: 20px;
 	vertical-align: middle;
 	width: auto;
 }
 
-.header-avatar span:after {
+a.header-avatar span:after {
 	content: '\f0dd';
 	display: inline-block;
 	font: normal normal normal 14px/1 FontAwesome;
 	padding-left: 6px;
-	padding-top: 2px;
+	padding-top: 5px;
 	vertical-align: top;
 }
 
@@ -890,7 +890,7 @@ fieldset.fields1 dl.pmlist dd.recipients {
 /* Pagination in viewforum for multipage topics */
 .row .pagination {
 	display: block;
-	margin-top: -12px;
+	margin-top: 0.3em;
 	margin-bottom: 5px;
 }
 
@@ -902,6 +902,12 @@ fieldset.fields1 dl.pmlist dd.recipients {
     padding: 1px 3px;
 	font-family: 'Electrolize', Arial, Helvetica, sans-serif;	
 	font-size: 11px;	
+}
+
+.topic-poster {
+	float: left;
+	padding-right: 0.5em;
+	margin-top: 0.3em;
 }
 
 /* jQuery popups
@@ -1059,6 +1065,13 @@ ul.linklist:after,
 	clear: both;
 	content: '';
 	display: block;
+}
+
+.emoji {
+	min-height: 18px;
+	min-width: 18px;
+	height: 1em;
+	width: 1em;
 }
 
 .smilies {
@@ -1228,6 +1241,10 @@ ul.linklist:after,
 
 .notification_text {
 	margin-left: 58px;
+}
+
+.badge.hidden {
+	display: none;
 }
 
 /* Navbar specific list items
