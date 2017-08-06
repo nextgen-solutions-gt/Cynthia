@@ -80,6 +80,17 @@ a.topictitle:hover {
 	text-decoration: underline;
 }
 
+.row-item a:hover {
+	text-decoration: none
+}
+
+.row-item .topictitle:hover,
+.row-item .subforum:hover,
+.row-item .username:hover,
+.row-item .username-coloured:hover {
+	text-decoration: underline;
+}
+
 a.lastsubject {
 	font-weight: bold;
 	text-decoration: none;

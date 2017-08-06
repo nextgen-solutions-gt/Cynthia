@@ -392,12 +392,7 @@ dl.faq dt {
 /* Quote block */
 blockquote {
 	background-color: #4c4c4c;
-	background-image: url("./images/quote.gif");
 	border-color:#262626;
-}
-
-.rtl blockquote {
-	background-image: url("./images/quote_rtl.gif");
 }
 
 blockquote blockquote {
@@ -423,13 +418,6 @@ blockquote blockquote blockquote {
 .codebox code {
 	color: #757575;
 }
-
-.syntaxbg		{ color: #FFFFFF; }
-.syntaxcomment	{ color: #FF8000; }
-.syntaxdefault	{ color: #0000BB; }
-.syntaxhtml		{ color: #000000; }
-.syntaxkeyword	{ color: #007700; }
-.syntaxstring	{ color: #DD0000; }
 
 /* Attachments
 ----------------------------------------*/
