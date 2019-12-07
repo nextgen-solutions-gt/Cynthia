@@ -5,7 +5,7 @@ Have been implemented large improvements among which we highlight.
 
 ## Style Support
 
-If you have questions or need help you can visit my official site [Xtrato] (http://www.xtrato.net/).
+If you have questions or need help you can visit my official site [Styles Development] (http://forum.melvingarcia.com/).
 
 ### My Personal website
 
