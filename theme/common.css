@@ -1157,6 +1157,7 @@ ul.linklist:after,
 	float: right;
 	font-weight: normal;
 	text-transform: none;
+	font-size: 9px;
 }
 
 .dropdown-extended .header .header_settings a {
