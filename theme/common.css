@@ -187,6 +187,7 @@ a:hover	{ text-decoration: underline; }
 }
 
 .site_logo {
+	background-repeat: no-repeat;
 	display: inline-block;
 	width: 245px;
 	height: 110px;
@@ -1157,6 +1158,7 @@ ul.linklist:after,
 	float: right;
 	font-weight: normal;
 	text-transform: none;
+	font-size: 9px;
 }
 
 .dropdown-extended .header .header_settings a {
