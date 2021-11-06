@@ -145,7 +145,7 @@ dd textarea {
 /* Browser-specific tweaks */
 button::-moz-focus-inner {
 	padding: 0;
-	border: 0
+	border: 0;
 }
 
 /* Quick-login on index page */
@@ -421,6 +421,6 @@ input.search {
 }
 
 .full { width: 95%; }
-.medium { width: 50%;}
-.narrow { width: 25%;}
-.tiny { width: 10%;}
+.medium { width: 50%; }
+.narrow { width: 25%; }
+.tiny { width: 10%; }
