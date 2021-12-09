@@ -594,7 +594,7 @@
 
 /* Menu Cynthia */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 700px) {
     
     /* show #nav-mobile */
     #nav-mobile{ display: block; }

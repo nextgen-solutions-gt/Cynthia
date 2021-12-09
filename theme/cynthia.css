@@ -29,7 +29,6 @@
    text-align: left;
    overflow: hidden;
    border-bottom: #000 solid 1px;
-   *height: 30px;
 }
 
 /* Breacrumb Cynthia */
@@ -89,6 +88,7 @@ li.header dd.lastpost { width: auto; }
 ul.topiclist li {
 	font-size: 12px;
 	color: #a5a4a4;
+	padding: 5px;
 }
 
 /* Float search direction */
