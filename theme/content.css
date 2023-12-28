@@ -88,6 +88,10 @@ ul.topiclist dfn {
 	margin-right: 5px;
 }
 
+.forum-image img {
+	max-width: 100%;
+}
+
 li.row {
 	border-top: 1px solid transparent;
 	border-bottom: 1px solid transparent;
@@ -98,7 +102,7 @@ li.row strong {
 }
 
 li.header dt, li.header dd {
-	line-height: 1em;
+	line-height: 1.6em;
 	border-left-width: 0;
 	margin: 2px 0 4px 0;
 	color: #FFFFFF;
@@ -867,4 +871,14 @@ table.fixed-width-table {
 
 #memberlist tr.inactive, #team tr.inactive {
 	font-style: italic;
+}
+
+/* Memberlist
+----------------------------------------*/
+.group-description {
+	font-size: 1.3em;
+}
+
+.group-description ul {
+	list-style-position: inside;
 }
